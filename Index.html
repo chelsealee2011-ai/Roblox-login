@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet World — Form Submission Demo</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #e8f5ff; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .box { width: 340px; background: white; padding: 30px; border-radius: 18px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); text-align: center; }
+        h1 { color: #4b7bec; }
+        input { width: 90%; padding: 12px; margin: 8px; border: 1px solid #ccc; border-radius: 8px; }
+        button { width: 96%; padding: 12px; margin-top: 12px; border: none; border-radius: 8px; background: #4b7bec; color: white; font-size: 16px; cursor: pointer; }
+        .warning { margin-top: 20px; padding: 12px; background: #fff3cd; border-radius: 8px; color: #664d03; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>🐾 Pet World</h1>
+    <p>Contact / Registration Demo</p>
+    
+    <!-- 1. The form element handles the data transmission -->
+    <form action="YOUR_FORM_ENDPOINT_HERE" method="POST">
+        
+        <!-- 2. The 'name' attributes are required so the email knows which field is which -->
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        
+        <button type="submit">Submit Details</button>
+    </form>
+
+    <div class="warning">
+        ⚠️ Ensure you are testing this in a safe, non-production training environment.
+    </div>
+</div>
+
+</body>
+</html>
